@@ -1,0 +1,64 @@
+﻿.page 
+{
+    height:auto;
+    width:auto;
+    border-style:groove;
+}
+.headerpart 
+{
+    height: 240px;
+    width: auto;
+    border-style: groove;
+    background-color: rgb(12,100,198);
+    background-image:url('..//Images/CollageLogo.jpeg');
+    /*background-repeat:no-repeat;*/
+}
+.linkspart
+{
+    width: auto;
+    height: 50px;
+    border-style: groove;
+    background-color: blue;
+    
+}
+.linkspart a
+{
+   color:white;
+   text-decoration:none;
+   margin-top:5px;
+   
+}
+    .linkspart a:hover 
+    {
+        color:red;
+        background-color:yellow      
+    }
+
+.bodypart {
+    height: 1000px;
+    width: auto;
+    border-style: groove;    
+}
+.bodypart .imagepart {
+    height: 500px;
+    width: 860px;
+    border-style: groove;
+    background-repeat:no-repeat;
+    display:inline-block;
+}
+    .bodypart .newspart {
+        height: 995px;
+        width: 464px;
+        border-style: groove;
+        float:right;
+    }
+    .bodypart .newspart .h2 {
+       color:green;
+       padding-left:3em;
+    }
+        .bodypart .newspart .news {
+            height: 780px;
+            width: 450px;
+            
+
+        }

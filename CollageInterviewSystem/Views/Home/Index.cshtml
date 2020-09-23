@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+} 
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            slideshow();
+
+        });
+    </script>
+
+    <script>
+        var imgg = ['Images/1.jpg', 'Images/2.jpg',
+            'Images/3.jpg', 'Images/4.jpg',
+            'Images/5.jpg', 'Images/6.jpg', 'Images/7.jpg'];
+        var count = 0;
+
+        function setImage() {
+
+            document.getElementById('imgs').src = imgg[count];
+            count = count + 1;
+
+            if (count == 7) {
+                count = 0;
+            }
+        }
+        function slideshow() {
+            intervalId = setInterval(setImage, 2000);
+        }
+    </script>
+
+</head>
+<body>
+    <div class="bodypart">
+        <div class="imagepart">
+            <img src="Images/1.jpg" id="imgs" alt="No Image Found" height="500" width="860" />
+            @*<input type="button" value="SlideShow" onclick="slideshow()" />*@
+        </div>
+       
+
+
+        <div class="newspart">
+            <h2 class="h2">News and Events</h2>
+            <div class="news text-center">
+                <marquee direction="up" height="90%">
+                    <h4> New Syllabus of FYBCS</h4><br /><br />
+                    <h4>Scollarship Notice</h4><br /><br />
+                    <h4>Annual Exam result MCS</h4><br /><br />
+                    <h4>New Addmition Notice</h4><br /><br />
+                    <h4>Sports 2020</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+                    <h4>This is Demo Text</h4><br /><br />
+
+
+                </marquee>
+            </div>
+        </div> 
+        <div>
+            <h1> This is T C Collage Baramati</h1>
+            <div>
+                <p>Tuljaram Chaturchand College of Arts, Science and Commerce, Baramati, 
+                 Pune is one of the leading and prestigious colleges in Maharashtra 
+                established in 1962. Our motto, ‘We for Students’ is at the heart of 
+                everything we do at the college.The college celebrated its Golden Jubilee 
+                in 2012. Keeping pace with modern trends in higher education, the college 
+                has full fledged UG courses in Arts, Science andCommerce along with PG 
+                courses almost in all subjects of different streams as well as Ph. D. Research 
+                centers. Beside traditional courses we seek to develop and introduce need based, 
+                value added, skill based and career oriented new courses.
+
+                   However, the College has been reaccredited for the third cycle with ‘A+’ grade 
+           (CGPA 3.55) by NAAC, Bangalore in 2017. It has been awarded the status of ‘College
+           with Potential for Excellence’ by UGC, and has been selected for STAR College scheme
+           by DBT & DST-FIST scheme by DST, New Delhi. The college has received several awards 
+          from Savitribai Phule Pune University, Pune including Best College Award, Best Principal
+          Award, Best Student Welfare Officer Award, Best NSS Coordinator Award, Best NSS Unit Award, 
+          Best NSS volunteer award and also the recipient of awards from the Maharashtra Government. </p>
+            </div>
+        </div>
+       
+    </div>
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Style/Layout.css" rel="stylesheet" />
+
+</head>
+<body> 
+    <div class="page">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="linkspart">
+                <div class="a text-center" style="margin-top:5px;">
+
+                    <h4>
+                        @Html.ActionLink("Home", "Index", "Home") &nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Infrastructure", "Infrastructure", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Academic", "Academic", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Departments", "Departments", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Activities", "Activities", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Gallary", "Gallary", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Student", "Student", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Placement_Portal", "Placement_Portal", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Abaut", "About", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Contact", "Contact", "Home")&nbsp;&nbsp;&nbsp;
+                        @Html.ActionLink("Login", "Login", "Home")
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+
+            <div class="headerpart">
+
+            </div>
+
+          
+
+            <div class="navbar navbar-inverse ">
+                <div class="container">
+                    <ul class="nav navbar-nav">
+                        <li><h4 new { class="navbar-brand" } style="color:red">Anekant Education Society's</h4></li>
+                        <li><h4 new { class="navbar-brand" } style="color:aqua"><b>Phone</b> -(02112)222405,223635</h4></li>
+                        <li><h4 new { class="navbar-brand" } style="color:magenta"> <b>Email</b> -principle@tccollage.org,</h4></li>
+                        <li><h4 new { class="navbar-brand" } style="color:magenta"> principletccollage@gmail.com</h4></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div>
+                @RenderBody()
+                <hr />
+                <footer>
+                    <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                </footer>
+            </div>
+
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+
+
+</body>
+</html>
